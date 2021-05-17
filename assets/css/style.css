@@ -66,3 +66,7 @@ p {
     color: #49AA43;
 } 
  
+#players img {
+    border-radius: 50%;
+}  
+ 
