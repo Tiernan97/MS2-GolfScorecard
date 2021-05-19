@@ -90,3 +90,7 @@ button[type="submit"] {
     background-color: #49AA43;;
     color: #fafafa;
 }
+
+label {
+    display: none;
+}
