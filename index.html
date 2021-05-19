@@ -19,10 +19,11 @@
     <!-- EmailJS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
-    (function() {
-      emailjs.init("user_1z6S9pOQure77MC4ZJQoz");
-    })();
-     </script>
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init("user_1z6S9pOQure77MC4ZJQoz");
+        })();
+    </script>
 
     <title>Golf Scorecard</title>
 </head> 
@@ -143,24 +144,27 @@ var x = setInterval(function() {
     clearInterval(x);
     document.getElementById("timer").innerHTML = "Tiernan has left the building!";
   }
-}, 1000);
+}, 1000); 
 </script>
   
-<section class="container-fluid ">
+<section class="container-fluid mt-5 pt-5">
         <div class="row bg-color-contact">
             <div class="col">
                 <h3 class="contact-heading uppercase text-center">Have you got advice for Tiernan?</h3>
                 <h5 class="uppercase text-center">Give it below!</h5>
             
-            <div class="center-form">
-                <form onsubmit="return sendMail(this);">
-                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
-                    <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
-                    <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Words of Wisdom" required></textarea>
-                    <button type="submit" class="btn btn-secondary center-block">Educate</button>
+            <div>
+                <form class="center-form" id="contact-form">
+                    <input type="text" name="user_name">
+                    <label>Name</label>
+                    <input type="text" name="user_email">
+                    <label>Email</label>
+                    <textarea name="message">Message</textarea>
+                    <input type="submit" value="Send">
                 </form>
+                
             </div>
-            </div>
+            </div> 
         </div>
     </section>
 
