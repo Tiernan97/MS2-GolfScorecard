@@ -153,14 +153,21 @@ var x = setInterval(function() {
                 <h3 class="contact-heading uppercase text-center">Have you got advice for Tiernan?</h3>
                 <h5 class="uppercase text-center">Give it below!</h5>
             
-            <div>
+            <div class="row">
                 <form class="center-form" id="contact-form">
-                    <input type="text" name="user_name" placeholder="Name">
-                    <label>Name</label>
-                    <input type="text" name="user_email" placeholder="E-mail">
-                    <label>Email</label>
-                    <textarea name="message" placeholder="Words of wisdom here..."></textarea>
-                    <input type="submit" value="Send">
+                    <div class="form-group">
+                        <input type="text" name="user_name" placeholder="Name">
+                        <label>Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="user_email" placeholder="E-mail">
+                        <label>Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Words of wisdom here..."></textarea>
+                    </div>
+
+                    <input type="submit" class="btn btn-primary" value="Send">
                 </form>
                 
             </div>
