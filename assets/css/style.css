@@ -94,3 +94,5 @@ button[type="submit"] {
 label {
     display: none;
 }
+
+div#map {min-height: 360px;}

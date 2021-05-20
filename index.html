@@ -55,6 +55,9 @@
       <li class="nav-item active">
         <a class="nav-link" href="#bestwishes">Best Wishes</a>
       </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="frankfurtcourses">Frankfurt Courses</a>
+      </li>
     </ul> 
   </div>
 </nav> 
@@ -175,7 +178,8 @@ var x = setInterval(function() {
         </div>
     </section>
 
-<section id="scorecard">
+<section id="frankfurtcourses">
+    <div id="map"></div>
     
 </section>
 
@@ -200,6 +204,21 @@ var x = setInterval(function() {
 <script src="scorecard.js"></script>
 <script src="assets/javascript/sendemail.js"></script>
 <script src="assets/javascript/navbar.js"></script>
+
+<script>
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 10,
+            center: {
+                lat: 50.1106444,
+                lng: 8.6820917
+            }
+        });
+    }
+</script>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4PPbwXYwwvqsYXrYGK_bIzs1pjQZrZ-Q&callback=initMap"></script>
+
 
 </body>
 
