@@ -96,3 +96,36 @@ label {
 }
 
 div#map {min-height: 360px;}
+
+.popup-header {
+    color: #49AA43;
+    text-transform: uppercase;
+    margin: 0 auto 8px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 600;
+}
+
+.popup-content {
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    padding: 5px 5px;
+    margin-bottom: 8px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.popup-link-promo,
+.popup-link {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    padding: 0 5px;
+    color: #49AA43;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}

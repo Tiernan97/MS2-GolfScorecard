@@ -1,36 +1,49 @@
      function initMap() {
         var map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 10,
+            zoom: 14,
             center: {
                 lat: 50.11965404079257,  
                 lng: 8.663006717928539
             }
         });
-    
-        var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
         var locations = [
-         //  { lat: 50.07436072207846, lng: 8.634940082778794 }, // Frankfurter Golf Club e.V. 
-         //  { lat: 50.11363566002675, lng: 8.45990218463149 }, // Golf-Club Hof Hausen vor der Sonne e.V.
-          //  { lat: 50.1891297174854, lng: 8.510156025111467 } // Golf- und Land-Club Kronberg e.V.
-    //    ];
-
-        [`<h6 class="popup-header">Frankfurter Golf Club e.V.</h6> <p class="popup-content"> ipsim imsap snasjnd akama kakad </br> and try our famous <strong>Holychino <i class="fas fa-mug-hot" aria-hidden="true"></i>.</strong></p>
-        <a class="popup-link" href="https://goo.gl/maps/61eDWDqqRhK91W3y5" target="_blank"> Get directions</a>`, 50.07436072207846, 8.634940082778794 ],
-        [`<h6 class="popup-header">Golf-Club Hof Hausen vor der Sonne e.V.</h6> <p class="popup-content"> ipsim imsap snasjnd akama kakad </br> ipsim imsap snasjnd akama kakad</p>
-        <a class="popup-link" href="https://goo.gl/maps/uSmUje2NXm1irkdC8" target="_blank"> Get directions</a>`, 50.11363566002675, 8.45990218463149 ],
-        [`<h6 class="popup-header">Golf- und Land-Club Kronberg e.V.</h6> <p class="popup-content">Welcome to our <span class="popup-new-promo">s</span> ipsim</br>You know what, we have discounts for you!</br> Click <a class="popup-link-promo" href="index.html#promo" target="_blank"> HERE </a> to get yours.</p>
-        <a class="popup-link" href="https://goo.gl/maps/MWuHpxCrvS878Ysn9" target="_blank"> Get directions</a>`, 50.1891297174854, 8.510156025111467 ]
+        [`<h6 class="popup-header">Frankfurter Golf Club e.V.</h6> <p class="popup-content"> Price: €110 </br> Distance from City Centre <strong>5.3km <i class="fas fa-golf-ball" aria-hidden="true"></i></strong></p>
+        <a class="popup-link" href="https://goo.gl/maps/TxpUp2dAHLrnffie9" target="_blank"> Get directions</a>`, 50.07436072207846, 8.634940082778794 ],
+        [`<h6 class="popup-header">Golf-Club Hof Hausen vor der Sonne e.V.</h6> <p class="popup-content"> Price: €90 </br> Distance from City Centre <strong>16km <i class="fas fa-golf-ball" aria-hidden="true"></i></strong></p>
+        <a class="popup-link" href="https://goo.gl/maps/HdL3hgEXyzvvAbQi8" target="_blank"> Get directions</a>`, 50.11363566002675, 8.45990218463149 ],
+         [`<h6 class="popup-header">Golf- und Land-Club Kronberg e.V.</h6> <p class="popup-content"> Price: €95 </br> Distance from City Centre <strong>15km <i class="fas fa-golf-ball" aria-hidden="true"></i></strong></p>
+        <a class="popup-link" href="https://goo.gl/maps/5rKNfametEz5HAJT7" target="_blank"> Get directions</a>`, 50.1891297174854, 8.510156025111467 ]
 ];
 
-        var markers = locations.map(function(location, i) {
-            return new google.maps.Marker({
-                position: location,
-                label: labels[i % labels.length]
-            });
-        });
+//Zoom a location by clicking on external button
+$(".location-button").click(function() {
+  map.setCenter(new google.maps.LatLng(this.dataset.lat, this.dataset.lng));
+  map.setZoom(15);
+  });  
 
-        var markerCluster = new MarkerClusterer(map, markers, {
-                imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
-            });
-    }
+  let infowindow = new google.maps.InfoWindow({});
+
+//Add markers on map according the information in locations array
+  let marker, count;
+  let bounds = new google.maps.LatLngBounds();
+  for (count = 0; count<locations.length; count++) {
+       marker = new google.maps.Marker ({
+       position: new google.maps.LatLng(locations[count][1], locations[count][2]),
+       map: map,
+       animation: google.maps.Animation.DROP
+  });
+
+bounds.extend(marker.getPosition());
+
+//Pop up an infowindow after clicking on marker
+google.maps.event.addListener(marker, 'click', (function (marker, count) {
+      return function () {
+        infowindow.setContent(locations[count][0]);
+        infowindow.open(map, marker);
+      }
+    })(marker, count));
+  }
+map.fitBounds(bounds);
+  
+}
