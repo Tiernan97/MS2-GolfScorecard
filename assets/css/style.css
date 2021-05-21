@@ -1,6 +1,10 @@
 body {
     font-family: "Roboto", sans-serif;
 }
+
+h1 {
+    color: #49AA43;
+}
  
 .home-container {
     height: 100vh;
@@ -77,7 +81,7 @@ body {
     max-width: 70%;
 }
 
-button[type="submit"] {
+.btn .btn-primary [type="submit"] {
     margin-top: 15px;
     margin-bottom: 20px;
     background-color: #49AA43;;
