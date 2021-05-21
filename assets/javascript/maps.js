@@ -10,9 +10,9 @@
         var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
         var locations = [
-            { lat: 50.0742567, lng: 8.634976522372764 }, // Frankfurter Golf Club e.V. 
-            { lat: 50.113990 , lng: 8.460340 }, // Golf-Club Hof Hausen vor der Sonne e.V.
-            { lat: 50.18910624890696 , lng: 8.51396441459656 } // Golf- und Land-Club Kronberg e.V.
+            { lat: 50.07436072207846, lng: 8.634940082778794 }, // Frankfurter Golf Club e.V. 
+           { lat: 50.11363566002675, lng: 8.45990218463149 }, // Golf-Club Hof Hausen vor der Sonne e.V.
+            { lat: 50.1891297174854, lng: 8.510156025111467 } // Golf- und Land-Club Kronberg e.V.
         ];
 
         var markers = locations.map(function(location, i) {
