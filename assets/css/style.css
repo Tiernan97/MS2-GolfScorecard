@@ -129,3 +129,10 @@ div#map {min-height: 360px;}
     margin-bottom: 5px;
     font-size: 0.9rem;
 }
+
+.img-fluid {
+transition: .2s ease-in-out;
+}
+.img-fluid:hover {
+transform: scale(1.2);
+}
