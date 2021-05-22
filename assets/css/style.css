@@ -81,7 +81,7 @@ h1 {
     max-width: 70%;
 }
 
-.btn .btn-primary [type="submit"] {
+button[type="submit"] {
     margin-top: 15px;
     margin-bottom: 20px;
     background-color: #49AA43;;
