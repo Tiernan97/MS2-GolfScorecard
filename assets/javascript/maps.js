@@ -7,6 +7,7 @@
             }
         });
 
+        // Content for on click pop up for markers on Google Map
         var locations = [
         [`<h6 class="popup-header">Frankfurter Golf Club e.V.</h6> <p class="popup-content"> Price: €110 </br> Distance from City Centre <strong>5.3km <i class="fas fa-golf-ball" aria-hidden="true"></i></strong></p>
         <a class="popup-link" href="https://goo.gl/maps/TxpUp2dAHLrnffie9" target="_blank"> Get directions</a>`, 50.07436072207846, 8.634940082778794 ],
@@ -36,7 +37,7 @@ $(".location-button").click(function() {
 
 bounds.extend(marker.getPosition());
 
-//Pop up an infowindow after clicking on marker
+// Listener for pop up window content from above line 11-18
 google.maps.event.addListener(marker, 'click', (function (marker, count) {
       return function () {
         infowindow.setContent(locations[count][0]);

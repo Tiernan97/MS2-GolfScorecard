@@ -24,7 +24,7 @@ var x = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("timer").innerHTML = "Tiernan has left the building!";
+    document.getElementById("timer").innerHTML = "The second leg of this tournament is over!";
   }
 }, 1000); 
 
