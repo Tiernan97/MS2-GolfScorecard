@@ -137,3 +137,9 @@ transform: scale(1.2);
 .btn .btn-primary {
     color: #49AA43;
 }
+
+form {
+    border: 4px solid #f1f1f1;
+    padding: 2rem;
+    border-radius: 8px;
+}
