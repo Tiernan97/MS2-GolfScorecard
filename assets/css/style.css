@@ -59,13 +59,17 @@ h1 {
     margin-top: 0;
 }
 
+.card-custom-header {
+    color: #49AA43;
+}
+
 .jumbotron {
     padding: 0;
 }
 
 #timer  {
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
     margin-top: 0px;
     color: #49AA43;
 } 
@@ -86,6 +90,10 @@ button[type="submit"] {
     margin-bottom: 20px;
     background-color: #49AA43;;
     color: #fafafa;
+}
+
+.btn-primary {
+    background-color: #49AA43 !important;
 }
 
 label {
