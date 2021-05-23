@@ -173,9 +173,11 @@
             <div class="container text-center">
                 <h1 class="contact-heading uppercase text-center pt-3">Give Tiernan your words of wisdom here!</h1>
                 <p class="uppercase text-center pt-2">No swing tips allowed.</p>
-            
+               <div id="alert-message">
+
+               </div>
             <div>
-                <form class="center-form pt-5" style="padding: 0px !important;" id="contact-form">
+                <form class="center-form pt-5 mt-5" style="padding: 0px !important;" id="contact-form">
                     <div class="form-group">
                         <input type="text" name="user_name" placeholder="Name" required>
                         <label>Name</label>
@@ -184,6 +186,7 @@
                         <input type="text" name="user_email" placeholder="E-mail" id="Email_for_form" required>
                         <label>Email</label>
                     </div>
+                    <div style="color: red; font-size: 10px;" id="Email_warning"></div>
                     <div class="form-group">
                         <textarea name="message" placeholder="Words of wisdom here..." required></textarea>
                     </div>
