@@ -39,9 +39,9 @@ Find a link to the live website [**here**](https://tiernan97.github.io/MS2-Tiern
 
       + From my previous experience with [Moqups](https://moqups.com/), I decided that sketches were the best option for me wireframing for this project. The scope of what I wanted for the project meant that the Moqups platform was not fit for purpose.
 
-      1.  Mobile Version Mockup
+      1.  [Mobile Version Mockup](assets/images/mockups/mobiledevicegolfsketch.jpg)
 
-      2.  Home Page Mockup
+      2.  [Home Page Mockup](assets/images/mockups/largedevicegolfsketch.jpg)
 
       # **Features**
       + This website is responsive on all devices.
