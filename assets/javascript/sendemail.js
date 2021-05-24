@@ -1,3 +1,4 @@
+// Function looks for specific requirements to validate or reject inputs as emails
 function ValidateEmail(mail) 
 {
  if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(mail))
@@ -13,7 +14,7 @@ window.onload = function() {
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
                 let email=document.getElementById("Email_for_form").value
-
+// If email is sent successfully, an alert message is triggered
               if(ValidateEmail(email)){
                 document.getElementById('Email_warning').innerHTML=null
                   emailjs.sendForm('contact_service', 'contact_form', this)
