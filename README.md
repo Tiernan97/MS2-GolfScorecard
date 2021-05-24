@@ -196,7 +196,6 @@ Find a link to the live website [**here**](https://tiernan97.github.io/MS2-Tiern
 
   ## **Content** 
   + All Content was written my I Tiernan Mc Dermott, the developer.
-  + All market research references were with reference to 1.1 graded postgraduate research activivites conducted behalf of the Tangent Dept of Trinity College Dublin.
   + I found inspiration from other slack participants Milestone 2 projects.
   
   ## **Media**
