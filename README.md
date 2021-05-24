@@ -16,7 +16,7 @@ Find a link to the live website [**here**](https://tiernan97.github.io/MS2-Tiern
         6. I want to be able to see how long it is until the second leg of the competition.
         7. I want to be able to see what courses we may be playing for the second leg of the tournament in Frankfurt, including basic information such as pricing and proximity to the city.
 
-           In the context of the development stage of the business, this user persona is what the website is built for. Our social media content creation begins in the coming weeks. From this we hope to drive traffic to this website. The ultimate goal is to give them a further insight into what we do and to have them sign up to be notified of our first stock launch.
+           The context of this website is that Kieran, Liam and Tiernan already know about the tournament and the fact that Tiernan is going abroad. They also know that there is a planned second leg of the tournament in 2022.
 + ## **Design**
     + **Color Scheme**
       + When deciding on the colour scheme I was careful to balance my use of Lahinch Golf Clubs shade of green throughout.
