@@ -157,3 +157,7 @@ form {
 label {
     display: none;
 }
+
+.form-input {
+    width: 95%;
+}
