@@ -158,6 +158,12 @@ label {
     display: none;
 }
 
+textarea {
+    overflow: auto;
+    resize: vertical;
+    width: 95%;
+}
+
 .form-input {
     width: 95%;
 }
